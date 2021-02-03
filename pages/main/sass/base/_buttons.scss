@@ -1,0 +1,34 @@
+.button {
+    padding: 1.5rem 4.5rem;
+    border-radius: 10rem;
+    font-family: Georgia;
+    font-size: 1.7rem;
+    line-height: 130%;
+    letter-spacing: 0.102rem;
+    color: $color-dark-3xl;
+    transition: all .3s;
+}
+.start-screen__button {
+    max-width: 20.8rem;
+    max-height: 5.2rem;
+    background: $color-primary;
+    border: none;
+    @include media-laptop {
+        align-self: center;
+    }
+    
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.start-screen__button:hover {
+    background: $color-primary-light;
+}

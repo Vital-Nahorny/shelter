@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./sass/pets.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header_wrapper">
+                <a href="../main/main.html" class="logo header__logo">
+                    <div class="logo__title">Cozy House</div>
+                    <div class="logo__subtitle">Shelter for pets in Boston</div>
+                </a>
+                <div class="header__burger unrotate">
+                    <div class="header__burger-icon"></div>
+                </div>
+                <div class="burger__menu hide">
+                    <a href="../main/main.html" class="logo">
+                        <div class="logo__title">Cozy House</div>
+                        <div class="logo__subtitle">Shelter for pets in Boston</div>
+                    </a> 
+                    <nav class="burger__nav">
+                        <ul class="burger__list">
+                            <li class="burger__item"><a class="burger__link" href="../main/main.html">About the shelter</a></li>
+                            <li class="burger__item"><a class="burger__link burger__link_active" href="./pets.html">Our pets</a></li>
+                            <li class="burger__item"><p class="burger__link burger__link-disable">Help the shelter</p></li>
+                            <li class="burger__item"><p class="burger__link burger__link-disable">Contacts</p></li>
+                        </ul> 
+                    </nav> 
+                </div>
+                <div class="burger__overlay unvisible"></div>
+                <nav class="header__nav">
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_disabled" href="../main/main.html">About the shelter</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_active" href="./pets.html">Our pets</a>
+                        </li>
+                        <li class="nav__item">
+                            <p class="nav__link  nav__link-disable">Help the shelter</p>
+                        </li>
+                        <li class="nav__item">
+                            <p class="nav__link  nav__link-disable">Contacts</p>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+        
+    <section class="pets">
+        <div class="wrapper pets__wrapper">
+            <h3 class="pets__title">
+                <span>Our friends who</span>
+                <span>are looking for a house</span> 
+                </h3>         
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination__button pagination__button-first pagination__button-disabled"><<</button>
+                <button class="pagination__button pagination__button-pre pagination__button-disabled"><</button>
+                <button class="pagination__button pagination__button-currentPage">1</button>
+                <button class="pagination__button pagination__button-next">></button>
+                <button class="pagination__button pagination__button-last">>></button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup__overlay"></div>
+                <div class="popup__body">
+                    <button class="popup__close-button">
+                        <img src="../../assets/icons/Close.png" alt="close">
+                    </button>
+                    <div class="popup__content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="contacts">
+                <h3 class="contacts__title">For questions and suggestions</h3>
+                <a href="mailto:email@shelter.com" class="contacts__email">email@shelter.com</a>
+                <a href="tel:+13 674 567 75 54" class="contacts__phone">+13 674 567 75 54</a>
+            </div>
+            <div class="location">
+                <h3 class="location__title">We are waiting for your visit</h3>
+                <a href="https://goo.gl/maps/wQs2DKqBckiiMzQm8" target="_blank" class="location__boston">
+                    
+                    1 Central Street, Boston
+                        (entrance from the store)
+                </a>
+                <a href="https://goo.gl/maps/qzujGz5ZBgAwQztj8" target="_blank" class="location__london">
+                    
+                    18 South Park, London
+                </a>
+            </div>
+            <div class="footer__img-conteiner">
+                <img src="../../assets/images/footer-puppy.png" alt="dog" class="footer__img">
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>  
+</body>
+</html>

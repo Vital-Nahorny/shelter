@@ -1,0 +1,120 @@
+.donation {
+    background-color: $color-light-l;
+}
+.donation__wrapper {
+    padding: 8.1rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-laptop {
+        padding: 8.1rem 10.1rem 10rem 10.1rem;
+        flex-direction: column;
+        justify-content: start;
+    };
+    @include media-tablet {
+        padding: 4.2rem 0 4.2rem;
+    }
+}
+
+.donation__content {
+    margin-left: 3rem;
+    @include media-laptop {
+        order: 1;
+        margin: 0 0 6rem 0;
+    };
+    @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0 0 4.2rem 0;
+    }
+}
+
+.donation__img {
+    @include media-laptop {
+        order: 2;
+    };
+    @include media-tablet {
+        width: 26rem;
+        height: 13.52rem;
+    }
+}
+
+.donation__title {
+    @include h3;
+    width: 29rem;
+    margin-bottom: 2rem;
+    color: $color-dark-l;
+    @include media-tablet {
+        @include h3-mobile;
+        max-width: 22rem;
+        text-align: center;
+    }
+}
+
+.donation__subtitle {
+    @include h5;
+    margin-bottom: 2rem;
+    color: $color-dark-l;
+    @include media-tablet {
+        @include paragraph-l;
+        letter-spacing: 0.001em;
+    }
+}
+
+.donation__link {
+    margin-bottom: 2rem;
+    display: inline-block;
+    padding: 1rem 1.4rem 1rem 6rem;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.12rem;
+    color: $color-dark-l;
+    text-decoration: none;
+    background: $color-primary;
+    border-radius: 0.9rem;
+    position: relative;
+    text-align: center;
+    @include media-tablet {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        padding: 1.35rem 1.5rem 1.35rem 6rem;
+
+    }
+}
+
+.donation__link:hover {
+    cursor: pointer;
+    background: $color-primary-light;
+}
+
+.donation__link::before {
+    position: absolute;
+    width: 3rem;
+    height: 2.3rem;
+    content: '';
+    left: 1.5rem;
+    top: 1rem;
+    background-image: url(../../../assets/icons/credit-card.png);
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.donation__text {
+    width: 38rem;
+    @include paragraph-s;
+    color: $color-dark-m;
+    @include media-tablet {
+        width: 28rem;
+        text-align: justify;
+    }
+}

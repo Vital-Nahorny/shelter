@@ -1,0 +1,14 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: $content-width;
+    @include media-laptop {
+        max-width: $tablet-width;
+    }
+    @include media-tablet {
+        max-width: $mobile-width;
+    }
+}
+
+.wrapper-background {
+    background: $start-screen-gradient-background;
+}

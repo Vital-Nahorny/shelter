@@ -1,0 +1,120 @@
+.help__wrapper {
+    padding: 8rem 8.7rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-laptop {
+        padding: 8rem 3.9rem 10rem;
+    }
+    @include media-tablet {
+        padding: 4.2rem 0.5rem 4.2rem;
+    }
+
+}
+
+.help__title {
+    @include h3;
+    margin-bottom: 6rem;
+    max-width: 31rem;
+    color: $color-dark-l;
+    text-align: center;
+    @include media-tablet {
+        @include h3-mobile;
+        max-width: 23rem;
+        margin-bottom: 4.2rem;
+    }
+}
+
+.help__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    @include media-laptop {
+        display: grid;
+        grid-template-columns: 17rem 17rem 17rem;
+        grid-template-rows: 11.3rem 11.3rem 11.3rem;
+        grid-column-gap: 6rem;
+        grid-row-gap: 5.5rem;
+        justify-items: center;
+        align-items: stretch;
+    }
+    @include media-tablet {
+        display: grid;
+        grid-template-columns: 13rem 13rem;
+        grid-template-rows: 8.7rem 8.7rem;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        justify-items: center;
+        align-items: stretch;
+    }
+}
+
+.help__list-item {
+    height: 11.3rem;
+    margin-right: 11.9rem;
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include media-laptop {
+        height: 11.3rem;
+        width: 17.0rem;
+        margin: 0;
+    }
+    @include media-tablet {
+        height: 8.7rem;
+        width: 13.0rem;
+        margin: 0;
+    }
+}
+
+.help__list-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.help__list-item:nth-child(6) {
+    margin-left: 8.4rem;
+    @include media-laptop {
+        margin-left: 0;
+    }
+}
+
+.help__list-item:nth-child(9) {
+    margin-right: 8.4rem;
+    @include media-laptop {
+        margin-right: 0;
+    }
+}
+
+.help__list-title {
+    @include h4;
+    margin-top: 3rem;
+    text-align: center;
+    color: $color-dark-l;
+    @include media-tablet {
+        @include h5;
+        margin-top: 2rem;
+    }
+}
+.help__list-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    @include media-tablet {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.help__list-item img {
+    @include media-tablet {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    }
+}

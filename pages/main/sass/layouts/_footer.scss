@@ -1,0 +1,152 @@
+.footer {
+    background: $footer-gradient-background;
+}
+
+.footer__wrapper {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    @include media-laptop {
+        padding-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    };
+}
+
+.contacts {
+    max-width: 28rem;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    @include media-laptop {
+        margin: 0 3rem 6.5rem 0;
+    };
+    @include media-tablet {
+        margin: 0 0 4rem 0;
+        align-items: center;
+    }
+}
+
+.contacts__title {
+    margin-bottom: 4rem;
+    @include h3;
+    color: $color-light-xl;
+    @include media-tablet {
+        text-align: center;
+        @include h3-mobile;
+    }
+}
+
+.contacts__email {
+    padding: 0.5rem 0 0.4rem 6rem;
+    margin-bottom: 4rem;
+    @include h4;
+    color: $color-primary;
+    background-image: url(../../../assets/icons/mail.svg);
+    background-repeat:no-repeat;
+    background-size: 4rem;
+    background-position: left;
+}
+
+
+.contacts__phone {
+    padding: 0.5rem 0 0.4rem 6rem;
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 2rem;
+    }
+    line-height: 115%;
+    letter-spacing: 0.12rem;
+    color:$color-primary;
+    background-image: url(../../../assets/icons/telephone.svg);
+    background-repeat:no-repeat;
+    background-size: 4rem;
+    background-position: left;
+}
+
+.location {
+    max-width: 30.2rem;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    @include media-laptop {
+        margin: 0 0 6.5rem 3rem;
+    };
+    @include media-tablet {
+        margin: 0 0 4rem 0;
+        
+    }
+}
+
+.location__title {
+    margin-bottom: 3.3rem;
+    @include h3;
+    color: $color-light-xl;
+    @include media-tablet {
+        text-align: center;
+        @include h3-mobile;
+        max-width: 27rem;
+        align-self: center;
+        margin-bottom: 4rem;
+    }
+}
+
+.location__boston {
+    padding-left: 4.2rem;
+    margin-bottom: 3.3rem;
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 2rem;
+    }
+    line-height: 115%;
+    letter-spacing: 0.12rem;
+    color: $color-primary;
+    background-image: url(../../../assets/icons/pin.svg);
+    background-repeat:no-repeat;
+    background-size: 2.2rem 3.2rem;
+    background-position: left;
+    @include media-tablet {
+        margin-bottom: 4rem;
+    }
+}
+
+.location__london {
+    padding: 0.5rem 0 0.4rem 4.2rem;
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 2rem;
+    }
+    line-height: 115%;
+    letter-spacing: 0.12rem;
+    color: $color-primary;
+    background-image: url(../../../assets/icons/pin.svg);
+    background-repeat:no-repeat;
+    background-size: 2.2rem;
+    background-position: left;
+}
+
+.footer__img-conteiner {
+    max-width: 30rem;
+    max-height: 31rem;
+    @include media-tablet {
+        padding: 0 2rem;
+    }
+}
+
+.footer__img {
+    @include media-tablet {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
